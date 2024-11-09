@@ -1,0 +1,37 @@
+.credential-box {
+    display: -webkit-flex;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 900px;
+}
+.modus {
+    position: fixed;
+    height: 500px;
+    background-color: var(--sand-400);
+    border-radius: 10px;
+    width: 646px;
+    padding-bottom: 5px;
+    padding-left: 5px;
+}
+.cred-sit {
+    position: fixed;
+    width:300px;
+    height: 500px;
+    z-index: 3;
+    pointer-events: none;
+    top: -60px;
+    left: 520px;
+    display: flex;
+}
+#cred-row  a{
+    text-decoration: none;
+    color: black;
+}
+
+
+#cred-row a:hover {
+    color: white;
+    text-decoration: none;
+}

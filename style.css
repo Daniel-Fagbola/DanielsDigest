@@ -1,0 +1,398 @@
+/*Typography and Style Guide*/
+/*Bebas Neue Embed CS*/
+.bebas-neue-regular {
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  /*Prata Font Embed CS*/
+  .prata-regular {
+    font-family: "Prata", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+/*Color Sheet */
+:root {
+  --base: #555;
+	--base-100: #f1f1f1;
+	--base-400: #555;
+	--base-800: #000;
+  --orange: #e65a04;
+  --orange-100: #FFCDAD;
+  --orange-400: #FC8E4A;
+  --blue: #4E86C8;
+  --blue-100: #C1D5EC;
+  --blue-400: #82ABD9;
+  --sand: #BE8E57;
+  --sand-100: #E8D7C4;
+  --sand-400: #D1B089;
+  --brown: #714C33;
+  --brown-100: #E5D2C7;
+  --brown-400: #CCA78E;
+
+body {
+	font-family: "Prata", serif;
+	font-optical-sizing: auto;
+	font-style: normal;
+	font-size: 15px;
+	padding-bottom:1000px;
+  margin: 0;
+}
+/*Lof Logo Top Left */
+header {
+  .lof-logo-transparent {
+    position: absolute;
+    width: 111px;
+    height: 113px;
+    top: 10px;
+    left: 20px;
+    object-fit: cover;
+    z-index: 3;
+    position: fixed;
+  }
+  /*Top Nav Bar*/
+  nav {
+    align-items: center;
+    ul {
+      z-index: 2;
+      list-style-type: none;
+      margin: 0px;
+      padding: 0px;
+      background-color: #CCA78E;
+      position: fixed;
+      top: 0%;
+      width: 100%;
+      li {
+        float: right;
+        padding-right: 50px;
+      }
+      li a, .dropbtn {
+        display: inline-block;
+        padding: 14px 16px;
+        color: black;
+        text-decoration: none;
+        text-align: center;
+      }
+      li a:hover, .dropdown:hover .dropbtn {
+        background-color: var(--sand-400);
+      }
+      li.dropdown {
+        display: inline-block;
+      }
+      .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: var(--sand-100);
+        z-index: 1;
+        width: auto;
+        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+      }
+      .dropdown-content a {
+        color: #000;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+        text-align: left;
+      }
+      .dropdown-content a:hover {
+        background-color: var(--brown-100);
+      }
+      .dropdown:hover .dropdown-content {
+        display: block;
+      }
+      .active {
+        background-color: var(--brown);
+      }
+    }
+  }
+}
+/*Box inbetween top and side nav bars*/
+.box {
+  width: 168px;
+  height: 145px;
+}
+.box .rectangle {
+  position: absolute;
+  width: 168px;
+  height: 145px;
+  margin-top: 48px;
+  left: 0;
+  background-color: var(--brown);
+  z-index: 0;
+  border-radius: 10px;
+  position: fixed;
+}
+
+/*This is the side nav box left*/
+.sidenav {
+  height: 100%;
+  width: 168px;
+  position: fixed;
+  z-index: 1;
+  margin-top: 48px;
+  left: 0;
+  background-color:var(--brown-400);
+  overflow-x: hidden;
+  padding-top: 200;
+  border-radius: 10px;
+}
+/*This is the sidenav links left*/
+.sidenav a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 15px;
+  display: block;
+  color: #000;
+}
+
+/*Hover color change for sidebar links left*/
+.sidenav a:hover {
+  color: white;
+}
+/*This is the input section within the logn/signup popup*/
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0px;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+/*This is the style guide for all buttons on the page*/
+button {
+  background-color: var(--brown);
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 100%;
+}
+/*Slight Opacity when hovering over buttons*/
+button:hover {
+  opacity: 0.8;
+}
+.cancelbtn {
+  width: auto;
+  padding: 10px 18px;
+  background-color: red;
+}
+.imgcontainer {
+  text-align: center;
+  margin: 24px 0 12px 0;
+  position: relative;
+}
+.img.avatar {
+  width: 40%;
+  border-radius: 50%;
+}
+.container {
+  padding: 16px;
+}
+span.psw {
+  float: right;
+  padding-top: 16px;
+}
+/*This is the popup when clicking login/signup*/
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 2;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.4);
+  padding-top: 60px;
+}
+
+.modal-content {
+  background-color: #Fefefe;
+  margin: 5% auto 15% auto;
+  border: 1px solid #888;
+  width: 80%;
+}
+/*Known error, because buttons are within nav bar, close button sits on home-screen corner I believe*/
+.close {
+  position: absolute;
+  right: 25px;
+  top: 0;
+  color: #000;
+  font-size: 35px;
+  font-weight: bold;
+}
+.close:hover,
+.close:focus {
+  color: red;
+  cursor: pointer;
+}
+/*Animations for opening*/
+.animate {
+  -webkit-animation: animatezoom 0.6s;
+  animation: animatezoom 0.6s;
+}
+/*Animations for opening*/
+@-webkit-keyframes {
+  from {-webkit-transform:scale(0)}
+  to {-webkit-transform: scale(1);}
+}
+/*Animations for opening*/
+@keyframes animatezoom {
+  from {transform: scale(0);}
+  to {transform: scale(1);}
+}
+.main {
+  margin-top: 150px;
+  margin-left: 160px;
+  font-size: 28px;
+  padding: 0px 10px;
+}
+
+@media screen and (max-height:450px) {
+  .sidenav {padding-top: 150px;}
+  .sidenav a {font-size: 18px;}
+}
+/*homepage image div class Don't truly understand the value of this code*/
+.hp-image {
+  width: 100px;
+  height: 149px;
+}
+/*Sizing and position updates to sitting image*/
+.hp-image .daniel-sitting {
+  position: fixed;
+  width: 100px;
+  height: 149px;
+  top: 0;
+  left: 0;
+  object-fit: cover;
+  padding-top: 115px;
+  padding-left: 30px;
+  z-index: 3;
+  pointer-events: none;
+}
+/*.project-box {
+  position: absolute; 
+  width: 646px;
+  height: 186px;
+  top: 80px;
+  left: 430px;
+  background-color: var(--blue-400);
+  border-radius: 10px;
+}
+  */
+/*This is flexbox for Projects-What is LOF tables*/
+#middle-section {
+  display: -webkit-flex;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 400px;
+}
+/*Projects Box Entirety */
+.projects {
+  height: 300px;
+  background-color: var(--blue-400);
+  border-radius: 10px;
+  text-align: ;
+  width: 646px;
+  padding-bottom: 5px;
+  padding-left: 5px;
+}
+/*Slideshow in light blue section within Projects */
+.slideproj {
+  background-color: var(--blue-100);
+  border-radius: 10px;
+  padding: 20px 0px;
+  height: 140px;
+  width: 200px;
+  .marquee {
+    width: 10vw;
+    max-width: 100%;
+    height: 300px;
+    overflow: hidden;
+    position: relative;
+    .track {
+      position: absolute;
+      white-space: nowrap;
+      will-change: transform;
+      animation: marquee 15s linear infinite;
+      display: flex;
+      gap: 10px;
+    }
+  }
+}
+/*Slideshow animation */
+@keyframes marquee {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+/*Introduction/Contact Me Table */
+#intro-box {
+  border-radius: 10px;
+  text-align: ;
+  width: 646px;
+  padding-bottom: 5px;
+  padding-left: 5px;
+}
+/*Personal Development Box Entirety */
+.personal {
+  height: 300px;
+  background-color: var(--sand-400);
+  border-radius: 10px;
+  text-align: ;
+  width: 646px;
+  padding-bottom: 5px;
+  padding-left: 5px;
+}
+/*Personal Development Img */
+.perinsight {
+  background-color: var(--sand-100);
+  border-radius: 10px;
+  padding: 20px 0px;
+  height: 140px;
+  width: 200px;
+}
+/*What is Lof Box */
+.lofinfo {
+  background-color: var(--brown);
+  border-radius: 10px;
+  text-align: ;
+  width: 646px;
+  padding-bottom: 5px;
+  padding-left: 5px;
+  margin-top: 10px;
+}
+/*Talent Outreach Section */
+.network {
+  position: fixed;
+  border-radius: 10px;
+  width: 300px;
+  text-decoration: none;
+  left: 180px;
+  top: 200px;
+}
+/*Entire table border */
+#network-tab {
+  border: 1px solid black;
+  border-collapse: collapse;
+  
+}
+/*Heading Boarder */
+#net-row1 {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+/*Entry Row Borders */
+#net-row2 {
+  border: 1px solid var(--blue-100);
+  border-collapse: collapse;
+}
+}

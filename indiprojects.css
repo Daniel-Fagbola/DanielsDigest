@@ -1,0 +1,56 @@
+body {
+    background-color: #C1D5EC;
+
+}
+a { color: inherit; }
+.navigation {
+    font-size: 35px;
+    display: flex;
+    justify-content: space-between;
+}
+.navigation a:hover {
+    color: white;
+}
+.title {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    margin-left: 14%;
+    max-width: 30%;
+}
+
+.flex-info {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.flex-info > div {
+    margin: 10px;
+}
+.goal {
+    background-color: #4E86C8;
+    border-radius: 10px;
+    align-items: center;
+    color: white;
+    padding: 5px;
+    text-align: left;
+    width: 20%;
+}
+.insights {
+    background-color: #4E86C8;
+    border-radius: 10px;
+    align-items: center;
+    color: white;
+    padding: 5px;
+    text-align: left;
+    width: 20%;
+}
+.improvements {
+    background-color: #4E86C8;
+    border-radius: 10px;
+    align-items: center;
+    color: white;
+    padding: 5px;
+    text-align: left;
+    width: 20%;  
+}

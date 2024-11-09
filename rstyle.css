@@ -1,0 +1,43 @@
+#rpage {
+    display: -webkit-flex;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 1150px;
+}
+  /*Projects Box Entirety */
+.resumebox {
+    height: 1000px;
+    background-color: var(--brown-100);
+    border-radius: 5px;
+    text-align: ;
+    width: 1000px;
+    padding-bottom: 5px;
+    padding-left: 5px;
+    text-decoration: none;
+}
+#resp1 {
+    height: 900px;
+    width: 800px;
+}
+  /*Sizing and position updates to standing image*/
+.standing-left {
+    position: fixed;
+    width:500px;
+    height: 900px;
+    top: 200px;
+    left: 170px;
+    z-index: 3;
+    pointer-events: none;
+}
+    /*Sizing and position updates to laying image*/
+.laying-right {
+    position: fixed;
+    width:500px;
+    height: 900px;
+    top: 200px;
+    left: 1300px;
+    z-index: 3;
+    pointer-events: none;
+}

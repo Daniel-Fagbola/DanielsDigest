@@ -1,0 +1,596 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>What Do You Think Teach</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Prata&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="./style.css">
+<script src="./script.js"></script>
+<link rel="icon" type="image" href="./assets/trimmy-lof-logo-transparent.png">
+<script src="https://kit.fontawesome.com/00fb704cb3.js" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<style>
+    /*Gantt Chart Styleing */
+    .chartMenu p {
+      padding: 10px;
+      font-size: 20px;
+    }
+    .chartCard {
+      width: 165vw;
+      height: calc(100vh - 40px);
+      margin-top: -700px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .chartBox {
+      width: 500px;
+      padding: 20px;
+      border-radius: 20px;
+      border: solid 3px rgba(54, 162, 235, 1);
+      background: white;
+    }
+    
+</style>
+</head>
+<body>
+    <!--Top Navigation-->
+    <header>
+        <!--This is the Lof logo which serves as the home page link-->
+        <a href="./index.html">
+            <img class="lof-logo-transparent" src="./assets/trimmy-lof-logo-transparent.png"/>
+        </a>
+        <!--This is specifically the top navigation-->
+        <nav>
+          <ul id="menu">
+              <li class="dropdown">
+                  <a href="./credentials.html" class="dropbtn">Credentials</a>
+                  <div class="dropdown-content">
+                      <a href="./cert1.html">Most Recent Certificaition</a>
+                  </div>
+              </li>
+              <li class="dropdown">
+                  <a href="./projects.html" class="dropbtn">Projects</a>
+                  <div class="dropdown-content">
+                      <a href="./project1.html">Most Recent Project</a>
+                  </div>
+              </li>
+              <li class="dropdown">
+                  <a href="./resume.html" class="dropbtn">Resume</a>
+                  <div class="dropdown-content">
+                      <a href="./assets/Daniel Fagbola.pdf" download="Daniel Fagbola Resume">Quick Download</a>
+                  </div>
+              </li>
+          </ul>
+      </nav>
+    </header>
+   <!--This is the box in between the top and side nav-->
+          <div class="box">
+                <div class="rectangle"></div>
+            </div>
+<!--This is the sidebar navigation-->
+    <div class="sidenav">
+        <!--This is the login and sign up button attributes-->
+        <!--This is the pop-up section-->
+        <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login  </button>
+        <div id="id01" class="modal">
+            <form class="modal-content animate" action="/action_page.php" method="post">
+                <div class="imgcontainer">
+                    <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+                    <img src="#" alt="Avatar" class="Avatar">
+                </div>
+                <!--This is the mid-section of the the pop-up-->
+                <div class="container">
+                    <label for="uname"><b>Username</b></label>
+                    <input type="text" placeholder="Enter Username" name="uname" required>
+              
+                    <label for="psw"><b>Password</b></label>
+                    <input type="password" placeholder="Enter Password" name="psw" required>
+                      
+                    <button type="submit">Login</button>
+                    <label>
+                      <input type="checkbox" checked="checked" name="remember"> Remember me
+                    </label>
+                  </div>
+                  <!--This is the bottom section of the login-->
+                  <div class="container" style="background-color:#f1f1f1">
+                    <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+                    <span class="psw">Forgot <a href="#">password?</a></span>
+                  </div>
+            </form>
+
+        </div>
+
+        <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;" >Sign Up  </button>
+        <!--This is the update changelog-->
+        <h1 style="font-family: Bebas Neue;">
+            <a href="#" style="font-size: 30px;">Beginner Guide</a>
+        </h1>
+        <h2 style="font-weight: normal;">Changelog</h2>
+            <li>
+                <a href="./ver1.html">Date - Ver. 1.0 Hello World</a>                </li>
+            <li>
+                <a href="#">Date - Release Title</a>
+            </li>
+            <li>                    
+                <a href="#">Date - Release Title</a>
+            </li>
+    </div>
+    <!--This is the image of me sitting-->
+    <div class="hp-image">
+        <img class="daniel-sitting" src="./assets/daniel-sitting.png">
+    </div>
+    <!--This is the Projects section all down to What is LOF as well as Asides-->
+    <div id="middle-section">
+        <!--Project Box-->
+        <div class="projects" id="project-box">
+            <table style="width: 100%;">
+                <tr>
+                    <th><h1 align="left">Projects</h1></th>
+                    <!--SlideShow-->
+                    <th rowspan="2" style="height: 100px;">
+                        <section class="slideproj carousel">
+                            <div class="marquee">
+                                <div class="track">
+                                    <img src="./assets/july-project.jpg" alt="" style="height: 150px;" width="150px">
+                                    <img src="./assets/Creative Writing Club.jpeg" alt="" style="height: 150px;" width="150px">
+                                    <img src="./assets/Physical Art.jpeg" alt="" style="height: 150px;" width="150px">
+                                    <img src="./assets/july-project.jpg" alt="" style="height: 150px;" width="150px">
+                                    <img src="./assets/Creative Writing Club.jpeg" alt="" style="height: 150px;" width="150px">
+                                    <img src="./assets/Physical Art.jpeg" alt="" style="height: 150px;" width="150px">
+                                </div>
+                            </div>
+                           </section>
+                    </th>
+                </tr>
+                <!--Project Ethos Description-->
+                <td>They say it takes 10,000 hours to become an expert. 
+                  One day I'd like to say I've done 10,000 projects. 
+                  At that point, surely I'd be an expert in numerous fields,
+                   or at the very least I would be an expert in the art of 
+                   completion. Skillful in my own ability to say what I want to 
+                   achieve, and achieve it.</td>
+            </table>
+        </div>
+        <!--Calendar Aside-->
+        <!--Introduction/Contact-->
+        <div class="intro-contact" id="intro-box">
+            <table style="width: 100%;">
+                <tr>
+                    <th style="background-color: #fc8e4a; width: 50%; 
+                    height: 10px;color: #f1f1f1;">
+                        <i class="fa-regular fa-user"></i>WHO IS DANIEL
+                    </th>
+                    <th style="background-color: #D1B089; color: #f1f1f1;">
+                      <i class="fa-regular fa-message"></i>Contact Me
+                    </th>
+                </tr>
+                <tr>
+                    <td>Daniel is a student, backed by a Bachelor of 
+                      Business Administration 
+                      in Information Systems. I am extremely interested 
+                      in the project lifecycle and how we can use the formulas and practices 
+                      we use with traditional projects in our everyday lives.</td>
+                    <td>
+                        <li>
+                            <a href="mailto:danielfagbola@myyahoo.com"><i class="fa-regular fa-envelope fa-3x" style="color: black;"></i></a>
+                        </li>
+                        <li>
+                            <a href="https://github.com/Daniel-Fagbola"><i class="fa-brands fa-github fa-3x" style="color: #171515;"></i></a>
+                        </li>
+                        <li>
+                            <a href="https://www.linkedin.com/in/daniel-fagbola?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3B8lMIwf%2BLQbOG1ofwq56jiQ%3D%3D"><i class="fa-brands fa-linkedin fa-3x" style="color: #0072b1;"></i></a>
+                        </li>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <!--Personal Development-->
+        <div class="personal" id="pd-box">
+            <table style="width: 100%;">
+                <tr>
+                    <th><h1 align="left">Personal Development</h1></th>
+                    <th rowspan="2" style="height: 100px;">
+                        <section class="perinsight">
+                            <img src="./assets/Language Independent Learning.jpeg" style="height: 150px;" width="150px alt="">
+                        </section>
+                    </th>
+                </tr>
+                <!--Personal Development Description-->
+                <td>If a student is constrained to a classroom and the 
+                  topics provided by the instructor, then a learner is constrained to the 
+                  locations they travel to and the people they are willing to learn from. 
+                  I am a learner. I want to learn in every role I inhabit, and I love to 
+                  push people into the roles of teacher, to truly give credence to the 
+                  things they have to say.</td>
+            </table>
+        </div>
+        <!--Lof-->
+        <div class="lofinfo" id="lof-box">
+            <h1 align="center">What is LOF</h1>
+            <p align="center">LOF is an artistic collective started by myself as well as a 
+              few others. What does it mean to truly be in the pursuit of knowledge? 
+              No one person can know everything, but through community and constant exchange, o
+              ne person could have access to everything!</p>
+        </div>
+    </div>
+    <!--Gantt Chart-->
+    <div class="chartCard">
+        <div class="chartBox">
+          <canvas id="myChart"></canvas>
+          <input type="month" onchange="chartFilter(this)" />
+  
+          <br><br>
+          <hr>
+          <br>
+          <input type="text" id="nameTask" list="tasks" />
+          <datalist id="tasks">
+          </datalist>
+  
+          <input type="date" id="startDateTask" />
+          <input type="date" id="endDateTask" />
+          <input type="text" id="teamMemberTask" list="names" />
+          <datalist id="names">
+          </datalist>
+  
+          <select id="statusTask">
+            <option value="0">Delayed</option>
+            <option value="1">Pending</option>
+            <option value="2">Complete</option>
+          </select>
+          <button onclick="addTask()">Add Task</button>
+  
+          <br><br>
+          <hr>
+          <br>
+  
+          <select id="minTask" onchange="showTask()">
+            <option selected value="0">Task 1</option>
+            <option value="1">Task 2</option>
+            <option value="2">Task 3</option>
+            <option value="3">Task 4</option>
+          </select>
+  
+          <select id="maxTask" onchange="showTask()">
+            <option value="5">Task 6</option>
+          </select>
+  
+        </div>
+      </div>
+      <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/chartjs-adapter-date-fns/dist/chartjs-adapter-date-fns.bundle.min.js"></script>
+    <!--Task Edittor-->
+      <script>
+      const colours = ['rgba(255, 26, 104, 1)', 'rgba(255, 159, 64, 1)', 'rgba(75, 192, 192, 1)'];
+  
+      // setup 
+      const data = {
+        //labels: ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun'],
+        datasets: [{
+          label: 'Weekly Sales',
+          data: [
+            {x: ['2024-10-03', '2024-10-06'], y: 'Wireframe', name: 'Daniel', status: 2},
+            {x: ['2024-10-06', '2024-11-08'], y: 'Begin Coding', name: 'Daniel', status: 2},
+            {x: ['2024-10-03', '2024-10-06'], y: 'Research', name: 'Daniel', status: 2},
+            {x: ['2024-11-08', '2024-11-15'], y: 'Focus Testing', name: 'Daniel', status: 1},
+            {x: ['2024-11-08', '2024-11-08'], y: 'Launch', name: 'Daniel', status: 2},
+            {x: ['2024-11-08', '2024-12-30'], y: 'Maintenance', name: 'Daniel', status: 0},
+            {x: ['2024-11-18', '2024-11-30'], y: 'Task 1', name: 'Daniel', status: 1},
+          ],
+          backgroundColor: (ctx) => {
+            return colours[ctx.raw.status]
+          },        
+          borderSkipped: false,
+          borderRadius: 10,
+          barPercentage: 0.5
+        }]
+      };
+  
+      const labelsArray = data.datasets[0].data.map((dataPoint, index) => {
+        return dataPoint.y;
+      })
+      const labelsArrayFilter = [...new Set(labelsArray)];
+  
+      // todayLine plugin block
+      const todayLine = {
+        id: 'todayLine',
+        afterDatasetsDraw(chart, args, pluginOptions) {
+          const { ctx, data, chartArea: { top, bottom, left, right }, scales: { x, y } } = chart;
+  
+          ctx.save();
+  
+          if(x.getPixelForValue(new Date()) >= left && x.getPixelForValue(new Date()) <= right) {
+            ctx.beginPath();
+            ctx.lineWidth = 3;
+            ctx.strokeStyle = 'rgba(102, 102, 102, 1)';
+            ctx.setLineDash([6, 6]);
+            ctx.moveTo(x.getPixelForValue(new Date()), top);
+            ctx.lineTo(x.getPixelForValue(new Date()), bottom);
+            ctx.stroke();
+            ctx.restore();
+  
+            ctx.setLineDash([]);
+  
+            ctx.beginPath();
+            ctx.lineWidth = 1; 
+            ctx.strokeStyle = 'rgba(102, 102, 102, 1)';
+            ctx.fillStyle = 'rgba(102, 102, 102, 1)';
+            ctx.moveTo(x.getPixelForValue(new Date()), top + 3);
+            ctx.lineTo(x.getPixelForValue(new Date()) - 6, top - 6);
+            ctx.lineTo(x.getPixelForValue(new Date()) + 6, top - 6);
+            ctx.closePath();
+            ctx.stroke();
+            ctx.fill();
+            ctx.restore();
+  
+            ctx.font = 'bold 12px sans-serif';
+            ctx.fillStyle = 'rgba(102, 102, 102, 1)';
+            ctx.textAlign = 'center';
+            ctx.fillText('Today', x.getPixelForValue(new Date()), bottom + 15);
+            ctx.restore();
+          }
+  
+          
+  
+        }
+      }
+  
+      // status plugin block
+      const status = {
+        id: 'status',
+        afterDatasetsDraw(chart, args, pluginOptions) {
+          const { ctx, data, options, chartArea: { top, bottom, left, right }, scales: { x, y } } = chart;
+  
+          const icons = ['\uf00d', '\uf110', '\uf00c'];
+          const angle = Math.PI / 180;
+          const paddingRight = options.layout.padding.right;
+  
+          ctx.save();
+          ctx.font = 'bolder 12px FontAwesome';
+          ctx.textBaseline = 'middle';
+          ctx.textAlign = 'center';
+          data.datasets[0].data.forEach((datapoint, index) => {
+  
+            if(y.getPixelForValue(index) > top && y.getPixelForValue(index) < bottom) {
+              ctx.beginPath();
+              ctx.fillStyle = colours[datapoint.status];
+              ctx.arc(right + (paddingRight / 2), y.getPixelForValue(index), 12, 0, angle * 360, false);
+              ctx.closePath();
+              ctx.fill();
+              ctx.fillStyle = 'white';
+              ctx.fillText(icons[datapoint.status], right + (paddingRight / 2), y.getPixelForValue(index));
+            }
+          });
+  
+          ctx.font = 'bolder 12px sans-serif';
+          ctx.fillStyle = 'black';
+          ctx.fillText('Status', right + (paddingRight / 2), top - 15);
+          ctx.restore();
+  
+          // console.log()
+  
+        }
+      }
+  
+      // assignedTasks plugin block
+      const assignedTasks = {
+        id: 'assignedTasks',
+        afterDatasetsDraw(chart, args, pluginOptions) {
+          const { ctx, data, chartArea: { top, bottom, left, right }, scales: { x, y } } = chart;
+          ctx.save();
+          ctx.font = 'bolder 12px sans-serif';
+          ctx.fillStyle = 'black';
+          ctx.textBaseline = 'middle';
+          ctx.textAlign = 'left';
+          data.datasets[0].data.forEach((datapoint, index) => {
+            if(y.getPixelForValue(index) > top && y.getPixelForValue(index) < bottom) {
+              ctx.fillText(datapoint.name, 10, y.getPixelForValue(index));
+            }
+          })
+          ctx.fillText('Names', 10, top - 15);
+          ctx.restore();
+        }
+      }
+  
+      // weekend plugin block
+      const weekend = {
+        id: 'weekend',
+        beforeDatasetsDraw(chart, args, pluginOptions) {
+          const { ctx, chartArea: { top, bottom, left, right, width, height }, scales: { x, y } } = chart;
+  
+          ctx.save();
+  
+          x.ticks.forEach((tick, index) => {
+            const day = new Date(tick.value).getDay();
+            // console.log(day)
+            if(day === 6 || day === 0) {
+              ctx.fillStyle = pluginOptions.weekendColor;
+              ctx.fillRect(x.getPixelForValue(tick.value), 
+                top, 
+                x.getPixelForValue(new Date(tick.value).setHours(24)) - x.getPixelForValue(tick.value), 
+                height);
+            }
+          })
+  
+          
+  
+        }
+      }
+  
+      // config 
+      const config = {
+        type: 'bar',
+        data,
+        options: {
+          layout: {
+            padding: {
+              left: 100,
+              right: 100,
+              bottom: 20
+            }
+          },
+          indexAxis: 'y',
+          scales: {
+            x: {
+              position: 'top',
+              type: 'time',
+              time: {
+                //unit: 'day',
+                displayFormats: {
+                  day: 'd'
+                }
+              },
+              min: '2024-10-01',
+              max: '2024-12-30'
+            },
+            y: {
+              min: 3,
+              max: 5,
+              labels: labelsArrayFilter
+            }
+          },
+          plugins: {
+            weekend: {
+              weekendColor: 'rgba(102, 102, 102, 0.2)'
+            },
+            legend: {
+              display: false
+            },
+            tooltip: {
+              displayColors: false,
+              yAlign: 'bottom',
+              callbacks: {
+                label: (ctx) => {
+                  return '';
+                },
+                title: (ctx) => {
+                  const startDate = new Date(ctx[0].raw.x[0])
+                  const endDate = new Date(ctx[0].raw.x[1])
+                  const formattedStartDate = startDate.toLocaleString([], {
+                    year: 'numeric',
+                    month: 'short',
+                    day: 'numeric',
+                  });
+                  const formattedEndDate = endDate.toLocaleString([], {
+                    year: 'numeric',
+                    month: 'short',
+                    day: 'numeric',
+                  });
+                  return [ctx[0].raw.name, `Task Deadline: ${formattedStartDate} - ${formattedEndDate}`];
+                }
+              }
+            }
+          }
+        },
+        plugins: [todayLine, assignedTasks, status, weekend]
+      };
+  
+      // render init block
+      const myChart = new Chart(
+        document.getElementById('myChart'),
+        config
+      );
+  
+      function chartFilter(date) {
+        const year = date.value.substring(0, 4);
+        const month = date.value.substring(5, 7)
+        const lastDay = (y, m) => {
+          return new Date(y, m, 0).getDate();
+        }
+  
+        const startDate = `${year}-${month}-01`;
+        const endDate = `${year}-${month}-${lastDay(year, month)}`;
+  
+        myChart.config.options.scales.x.min = startDate;
+        myChart.config.options.scales.x.max = endDate;
+        myChart.update();
+      }
+  
+      function addTask() {
+        const nameTask = document.getElementById('nameTask');
+        const startDateTask = document.getElementById('startDateTask');
+        const endDateTask = document.getElementById('endDateTask');
+        const teamMemberTask = document.getElementById('teamMemberTask');
+        const statusTask = document.getElementById('statusTask');
+        const arrayLength = myChart.data.datasets[0].data.length;
+        myChart.data.datasets[0].data[arrayLength] = {x: [startDateTask.value, endDateTask.value], y: nameTask.value, name: teamMemberTask.value, status: parseInt(statusTask.value)};
+  
+        addNames();
+        myChart.update();
+      }
+  
+      function addNames() {
+        const names = document.getElementById('names');
+        // console.log(names.firstElementChild)
+        while(names.firstElementChild) {
+          names.removeChild(names.firstElementChild)
+        };
+  
+        const namesArray = myChart.data.datasets[0].data.map((dataPoint) => {
+          return dataPoint.name;
+        })
+  
+        const namesArrayFilter = [...new Set(namesArray)]
+  
+        namesArrayFilter.forEach((memberName) => {
+          const option = document.createElement('option');
+          option.value = memberName;
+          names.appendChild(option);
+        })
+      };
+  
+      addNames();
+  
+      function addTasks() {
+        const tasks = document.getElementById('tasks');
+        // console.log(names.firstElementChild)
+        while(tasks.firstElementChild) {
+          tasks.removeChild(tasks.firstElementChild)
+        };
+  
+        labelsArrayFilter.forEach((taskName) => {
+          const option = document.createElement('option');
+          option.value = taskName;
+          tasks.appendChild(option);
+        })
+      };
+  
+      addTasks();
+  
+      function showTask(){
+        const yScale = myChart.config.options.scales.y;
+        const minTask = document.getElementById('minTask').value;
+        const maxTask = document.getElementById('maxTask').value;
+        yScale.min = yScale.labels[minTask];
+        yScale.max = yScale.labels[maxTask];
+        myChart.update();
+      }
+      </script>
+    <!--Talent Outreach-->
+    <div class="network">
+      <table id="network-tab" style="width: 100%;">
+        <tr id="net-row1">   
+            <th style="background-color: #4E86C8; color: #f1f1f1; border-radius: 5px;">
+              <i class="fa-solid fa-user-group"></i>MY NETWORK
+            </th>
+        </tr>
+        <tr id="net-row2">
+            <td> <i class="fa-solid fa-play"></i><a style="text-decoration: none; color: #171515;" href="mailto:danielfagbola@myyahoo.com">Lidya Aberra - Computer Engineer</a></td>
+        </tr>
+        <tr>
+          <td id="net-row2"> <i class="fa-solid fa-play"></i><a style="text-decoration: none; color: #171515;" href="mailto:danielfagbola@myyahoo.com">Sanai Kaufman - UX Designer</a></td>
+        </tr>
+        <tr id="net-row2">
+          <td> <i class="fa-solid fa-play"></i><a style="text-decoration: none; color: #171515;" href="mailto:danielfagbola@myyahoo.com">Deserai Brown - Human Resources Counsultant</a></td>
+        </tr>
+        <tr id="net-row2">
+          <td> <i class="fa-solid fa-play"></i><a style="text-decoration: none; color: #171515;" href="mailto:danielfagbola@myyahoo.com">Jabari Banks Archivist</a></td>
+        </tr>
+    </table>
+    </div>
+  
+</body>
+</html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Prata&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="./style.css">
+<link rel="stylesheet" href="./rstyle.css">
+<script src="./script.js"></script>
+<link rel="icon" type="image" href="./assets/trimmy-lof-logo-transparent.png">
+<script src="https://kit.fontawesome.com/00fb704cb3.js" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+<header>
+    <!--This is the Lof logo which serves as the home page link-->
+    <a href="./index.html">
+        <img class="lof-logo-transparent" src="./assets/trimmy-lof-logo-transparent.png"/>
+    </a>
+    <!--This is specifically the top navigation-->
+    <nav>
+        <ul id="menu">
+            <li class="dropdown">
+                <a href="./credentials.html" class="dropbtn">Credentials</a>
+                <div class="dropdown-content">
+                    <a href="./cert1.html">Most Recent Certificaition</a>
+                </div>
+            </li>
+            <li class="dropdown">
+                <a href="./projects.html" class="dropbtn">Projects</a>
+                <div class="dropdown-content">
+                    <a href="./project1.html">Most Recent Project</a>
+                </div>
+            </li>
+            <li class="dropdown">
+                <a href="./resume.html" class="dropbtn">Resume</a>
+                <div class="dropdown-content">
+                    <a href="./assets/Daniel Fagbola.pdf" download="Daniel Fagbola Resume">Quick Download</a>
+                </div>
+            </li>
+        </ul>
+    </nav>
+</header>
+<!--Resume Holder-->
+<div id="rpage">
+    <div class="resumebox" id="project-box">
+    <table style="width: 100%;">
+        <!--Download and Print Buttons-->
+        <tr>
+            <th>
+                <h1 align="right">
+                    <a href="./assets/Daniel Fagbola.pdf" download="Daniel Fagbola Resume">
+                        <i class="fa-solid fa-download" style="color: black;"></i>
+                    </a>
+                
+                <a href="./assets/Daniel Fagbola F2024.pdf" onclick="print()">
+                    <i class="fa-solid fa-print" style="color: black;"></i>
+                </a>
+            </h1>
+            </th>
+        </tr>
+        <!--Resume Image-->
+        <td align="center"><img id="resp1" src="./assets/Daniel Fagbola.png" alt=""></td>
+    </table>
+    </div>
+</div>
+    <img class="standing-left" src="./assets/daniel-standing-chair.png" alt="">
+    <img class="laying-right" src="./assets/daniel-laying.png" alt="">
+</body>
